@@ -3,14 +3,12 @@ public class Pessoa {
 	private String nome;
 	private String endereco;
 	private String cpf;
-	private String naturalidade;
 	private int idade;
 	
-	public Pessoa(String nome, String endereco, String cpf, String naturalidade, int idade){
+	public Pessoa(String nome, String endereco, String cpf, int idade){
 		this.nome = nome;
 		this.endereco = endereco;
 		this.cpf = cpf;
-		this.naturalidade = naturalidade;
 		this.idade = idade;
 	}
 
@@ -36,14 +34,6 @@ public class Pessoa {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
-	}
-
-	public String getNaturalidade() {
-		return naturalidade;
-	}
-
-	public void setNaturalidade(String naturalidade) {
-		this.naturalidade = naturalidade;
 	}
 
 	public int getIdade() {
