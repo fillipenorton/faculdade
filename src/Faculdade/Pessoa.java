@@ -1,3 +1,4 @@
+package Faculdade;
 
 public class Pessoa {
 	private String nome;
@@ -11,7 +12,13 @@ public class Pessoa {
 		this.cpf = cpf;
 		this.idade = idade;
 	}
-
+   
+	public String toString(){
+        String dados = "Nome: " + nome + "\n";
+        dados += "Idade: " + idade + "\n";
+        dados += "CPF: " + cpf + "\n";
+        return dados;
+    }
 	public String getNome() {
 		return nome;
 	}

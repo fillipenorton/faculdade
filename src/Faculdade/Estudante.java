@@ -1,3 +1,5 @@
+package Faculdade;
+
 
 public class Estudante extends Pessoa {
 	private int matricula;
@@ -24,4 +26,11 @@ public class Estudante extends Pessoa {
 		this.mensalidade = mensalidade;
 	}
 
+    public String toString()
+    {
+        String dados = super.toString();
+        dados += "Matricula: " + matricula + "\n";
+        return dados;
+    }
+	
 }

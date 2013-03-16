@@ -1,3 +1,4 @@
+package Faculdade;
 
 public class Professor extends Pessoa {
 	private String departamento;
@@ -7,6 +8,13 @@ public class Professor extends Pessoa {
 		this.departamento = departamento;
 	}
 
+    public String toString()
+    {
+        String dados = super.toString();
+        dados += "Departamento: " + departamento + "\n";
+        return dados;
+    }	
+	
 	public String getDepartamento() {
 		return departamento;
 	}
